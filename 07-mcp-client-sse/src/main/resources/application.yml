@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: mcp-client-sse
+  profiles:
+    active: dev

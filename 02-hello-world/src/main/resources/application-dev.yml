@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  main:
+    web-application-type: none
+  ai:
+    ollama:
+      base-url: http://127.0.0.1:11434
+
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml

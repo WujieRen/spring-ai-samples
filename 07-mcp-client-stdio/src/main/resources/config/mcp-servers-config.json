@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp-server-computer": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "/Users/apple/Documents/code/xfg/my/spring-ai-samples/07-mcp-server-weather/target/07-mcp-server-weather-3.4.3.jar"
+      ]
+    }
+  }
+}
+

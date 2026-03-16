@@ -1,0 +1,34 @@
+server:
+  port: 8090
+
+spring:
+  #  main:
+  #    web-application-type: none
+  ai:
+    mcp:
+      client:
+        request-timeout: 360s
+#        stdio:
+#          servers-configuration: classpath:/config/mcp-servers-config.json
+        sse:
+          connections:
+            mcp-server-weather:
+              url: http://127.0.0.1:8888
+#             可以配置多个
+#            mcp-server-xxxs:
+#              url: http://127.0.0.1:8102
+    openai:
+      base-url: https://apis.itedus.cn
+      api-key: sk-bHgU7iFMgljphTKJ5aD45d503dCf491f829b8b9a9aBcB584
+      chat:
+        options:
+          model: gpt-4o
+      embedding-model: text-embedding-ada-002
+      embedding:
+        options:
+          num-batch: 1536
+
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
