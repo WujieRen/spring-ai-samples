@@ -1,5 +1,5 @@
 spring:
   application:
-    name: hello-world
+    name: mcp-client-stdio
   profiles:
     active: dev
